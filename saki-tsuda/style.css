@@ -1,0 +1,154 @@
+h1 {
+  font-family: "Bytesized", "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.inner {
+  padding: 16px 36px;
+}
+
+/* ヘッダー */
+.header__logo {
+  text-align: center;
+  & img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.header__menu {
+  padding: 0 36px;
+}
+
+.header__menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+  }
+}
+
+.header__menu li {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header__menu li span {
+  display: block;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* セクション */
+main {
+  border: 1px solid #000;
+}
+section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+  display: inline-block;
+  border-bottom: 6px dotted #888;
+}
+
+section h2 span {
+  margin-left: 16px;
+  font-size: 14px;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* コンテナ */
+.conteiner {
+  padding: 16px 36px;
+  display: grid;
+  gap: 12px;
+
+  /* SP */
+  grid-template-columns: repeat(1, 1fr);
+
+  /* TB */
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* PC */
+  @media (min-width: 1280px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* item */
+.item {
+  margin: 0 auto;
+}
+
+/* コピー */
+
+caption {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th, td {
+  border: 1px solid #DDD;
+  padding: 8px 16px;
+  text-align: left;
+}
+
+th {
+  background: #F1EFE8;
+}
+
+.cell-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.copy-btn {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: 6px;
+  color: #888780;
+  transition: color 0.15s ease;
+}
+
+.copy-btn:hover {
+  color: #2C2C2A;
+}
+
+.copy-btn i {
+  font-size: 16px;
+}
+
+.copy-btn.is-copied {
+  color: #3B6D11;
+}
+
+
+
+/* フッター */
+footer {
+  text-align: center;
+  font-family: "DotGothic16", sans-serif;
+}
