@@ -28,8 +28,10 @@
       rel="stylesheet"
     />
 
-
-    <meta property="og:image" content="https://tsuda-saki.github.io/saki-tsuda/ogp.png" />
+    <meta
+      property="og:image"
+      content="https://tsuda-saki.github.io/saki-tsuda/ogp.png"
+    />
     <title>codeストック</title>
   </head>
   <body>
@@ -42,34 +44,63 @@
         <div class="header__menu">
           <div class="inner">
             <ul>
-              <li>コード<span>Code</span></li>
-              <li>参考サイト<span>Site</span></li>
-              <li>WEBツール<span>Tool</span></li>
-              <li>クラス名<span>class</span></li>
+              <li>
+                <a href="#code">コード<span>Code</span></a>
+              </li>
+              <li>
+                <a href="#site">参考サイト<span>Site</span></a>
+              </li>
+              <li>
+                <a href="#tool">WEBツール<span>Tool</span></a>
+              </li>
+              <li>
+                <a href="#name-class">クラス名<span>class</span></a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <section>
+      <section id="code">
         <div class="inner">
           <h2>コード<span>Code</span></h2>
         </div>
       </section>
-      <section>
+      <section id="site">
         <div class="inner">
           <h2>参考サイト<span>Site</span></h2>
         </div>
       </section>
-      <section>
+      <section id="tool">
         <div class="inner">
           <h2>WEBツール<span>Tool</span></h2>
+        <div class="website__display">
+          <h3 class="tool__category">画像</h3>
+            <div class="inner">
+            <p class="website-display__text"><a href="https://bulkresizephotos.com/ja">画像のリサイズ</a></p>
+            <iframe src="https://bulkresizephotos.com/ja"
+                width="320"
+                height="200"
+                style="border:none;">
+            </iframe>
+            </div>
+          </div>
         </div>
       </section>
-      <section>
+      <section id="name-class">
         <div class="inner">
           <h2>クラス名<span>class</span></h2>
+          <div class="website__display">
+            <div class="inner">
+            <p class="website-display__text">★クラス名翻訳ツール【codic】</p>
+            <iframe src="https://codic.jp/engine"
+                width="100%"
+                height="240"
+                style="border:none;">
+            </iframe>
+            </div>
+          </div>
           <div class="conteiner">
             <!-- 1 -->
             <div class="item">
@@ -82,10 +113,10 @@
                   <th>クラス名</th>
                 </tr>
                 <tr>
-                  <td>サンプル</td>
+                  <td>レイアウト</td>
                   <td>
                     <div class="cell-content">
-                      <span class="copy-value">sample</span>
+                      <span class="copy-value">layout</span>
                       <button
                         type="button"
                         class="copy-btn"
@@ -99,10 +130,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>サンプル</td>
+                  <td>要素全体包む</td>
                   <td>
                     <div class="cell-content">
-                      <span class="copy-value">sample</span>
+                      <span class="copy-value">container</span>
                       <button
                         type="button"
                         class="copy-btn"
@@ -116,10 +147,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>サンプル</td>
+                  <td>container内側の要素</td>
                   <td>
                     <div class="cell-content">
-                      <span class="copy-value">sample</span>
+                      <span class="copy-value">inner</span>
                       <button
                         type="button"
                         class="copy-btn"
@@ -133,10 +164,78 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>サンプル</td>
+                  <td>containerの外側要素</td>
                   <td>
                     <div class="cell-content">
-                      <span class="copy-value">sample</span>
+                      <span class="copy-value">outer</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>メインコンテンツ</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">main</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>セクション</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">section</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>エリア</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">area</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>グループ</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">group</span>
                       <button
                         type="button"
                         class="copy-btn"
@@ -155,52 +254,6 @@
             <div class="item">
               <table>
                 <caption>
-                  コーポネント
-                </caption>
-                <tr>
-                  <th>意味</th>
-                  <th>クラス名</th>
-                </tr>
-                <tr>
-                  <td>サンプル</td>
-                  <td>
-                    <div class="cell-content">
-                      <span class="copy-value">sample</span>
-                      <button
-                        type="button"
-                        class="copy-btn"
-                        aria-label="コピー"
-                      >
-                        <i class="ti ti-copy" aria-hidden="true"
-                          ><img src="copy.png" alt="コピー"
-                        /></i>
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>サンプル</td>
-                  <td>
-                    <div class="cell-content">
-                      <span class="copy-value">sample</span>
-                      <button
-                        type="button"
-                        class="copy-btn"
-                        aria-label="コピー"
-                      >
-                        <i class="ti ti-copy" aria-hidden="true"
-                          ><img src="copy.png" alt="コピー"
-                        /></i>
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <!-- 3 -->
-            <div class="item">
-              <table>
-                <caption>
                   状態
                 </caption>
                 <tr>
@@ -208,10 +261,10 @@
                   <th>クラス名</th>
                 </tr>
                 <tr>
-                  <td>サンプル</td>
+                  <td>開く</td>
                   <td>
                     <div class="cell-content">
-                      <span class="copy-value">sample</span>
+                      <span class="copy-value">open</span>
                       <button
                         type="button"
                         class="copy-btn"
@@ -225,10 +278,129 @@
                   </td>
                 </tr>
                 <tr>
-                  <td>サンプル</td>
+                  <td>閉じる</td>
                   <td>
                     <div class="cell-content">
-                      <span class="copy-value">sample</span>
+                      <span class="copy-value">close</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>前</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">prev</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                  <tr>
+                  <td>次</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">next</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                </tr>
+                <tr>
+                  <td>アクティブ（有効）</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">active</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>無効</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">disabled</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>非表示</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">hidden</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>表示</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">show</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>現使用位置</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">current</span>
                       <button
                         type="button"
                         class="copy-btn"
@@ -243,9 +415,491 @@
                 </tr>
               </table>
             </div>
-          </div>
+            <!-- 4 -->
+            <div class="item">
+              <table>
+                <caption>
+                  サイズ・形
+                </caption>
+                <tr>
+                  <th>意味</th>
+                  <th>クラス名</th>
+                </tr>
+                <tr>
+                  <td>大</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">large</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>中</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">medium</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>小</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">small</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>丸</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">circle</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>角丸</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">round</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          <!-- 5 -->
+            <div class="item">
+              <table>
+                <caption>
+                  コーポネント
+                </caption>
+                <tr>
+                  <th>意味</th>
+                  <th>クラス名</th>
+                </tr>
+                <tr>
+                  <td>ボックス</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">box</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>項目（アイテム）</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">item</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>画像あり情報</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">card</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ナビゲーション</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">nav</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>サイドバー</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">sidebar</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>本文コンテンツ</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">content</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>補足コンテンツ</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">aside</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>投稿・記事</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">post</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>説明</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">about</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ニュース</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">news</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>実績</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">work</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>サービス</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">service</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>イベント</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">event</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>お知らせ</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">info</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>カテゴリー</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">category</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>補足</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">caption</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>ユーザー</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">user</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>プロフィール</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">profile</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>コメント</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">comment</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>サイトマップ</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">sitemap</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>詳細</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">detail</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>説明</td>
+                  <td>
+                    <div class="cell-content">
+                      <span class="copy-value">description</span>
+                      <button
+                        type="button"
+                        class="copy-btn"
+                        aria-label="コピー"
+                      >
+                        <i class="ti ti-copy" aria-hidden="true"
+                          ><img src="copy.png" alt="コピー"
+                        /></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
         </div>
-      </section>
+  </section>
     </main>
     <footer>©saki-tsuda:2026</footer>
     <script src="script.js"></script>

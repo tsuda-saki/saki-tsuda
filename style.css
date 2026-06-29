@@ -1,3 +1,7 @@
+* {
+  font-family: sans-serif;
+}
+
 h1 {
   font-family: "Bytesized", "DotGothic16", sans-serif;
   font-weight: 400;
@@ -87,6 +91,19 @@ section h2 span {
   }
 }
 
+.website-display__text {
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.tool__category {
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 16px;
+  padding: 8px;
+  font-weight: bold;
+  border: 1px solid #bdbbaf;
+}
 
 /* item */
 .item {
